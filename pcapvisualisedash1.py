@@ -8,7 +8,7 @@ from scapy.all import rdpcap
 app = dash.Dash(__name__)
 server = app.server
 # Load initial data
-packets = rdpcap('Networkcapture1.pcap')
+packets = rdpcap('fuzz-2006-09-29-18465.pcap')
 packet_index = 0
 max_packets_per_update = 100
 
